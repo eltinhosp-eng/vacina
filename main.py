@@ -1,4 +1,4 @@
-from urllib.request import urlopen
+import urllib.request
 from bs4 import BeautifulSoup
 
 def buscar_faixas(dose_final, bs):
@@ -12,7 +12,7 @@ def buscar_faixas(dose_final, bs):
              print(f"ID: {option['value']} DESCRIÇÃO: {option.text}")
         print("*******************")
 
-html = urlopen("https://vacinacovid.saobernardo.sp.gov.br/VacinaSBCProd/servlet/inicial")
+html = urllib.request.urlopen("https://vacinacovid.saobernardo.sp.gov.br/VacinaSBCProd/servlet/inicial")
 bs = BeautifulSoup(html, 'html.parser')
 
 buscar_faixas(3, bs)  
