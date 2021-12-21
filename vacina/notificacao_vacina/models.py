@@ -15,6 +15,8 @@ class Pessoa(models.Model):
 
 
 class Notificacao(models.Model):
+    class Meta:
+        verbose_name_plural = "Notificações"
     RESPOSTAS = (
         ('S', 'Sim'),
         ('N', 'Não')
