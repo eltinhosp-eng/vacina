@@ -10,8 +10,8 @@ A lista está disponível em [https://vacinacovid.saobernardo.sp.gov.br/](url)
 
 **Fase 2**
 
-- [ ] Configuração do Django e criação dos serviços e endpoints
-- [ ] Definição das informações do Banco de Dados
+- [X] Configuração do Django e criação dos serviços e endpoints
+- [X] Definição das informações do Banco de Dados
 
 **Fase 3**
 
