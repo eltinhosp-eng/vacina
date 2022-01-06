@@ -1,5 +1,5 @@
 from rest_framework.routers import DefaultRouter
-from views import VacinaViewSet, PessoaViewSet, NotificacaoViewSet
+from .views import VacinaViewSet, PessoaViewSet, NotificacaoViewSet
 
 app_name = 'api'
 

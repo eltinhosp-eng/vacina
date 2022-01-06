@@ -1,9 +1,9 @@
 from django.http import HttpResponse
 import urllib.request
 from bs4 import BeautifulSoup
-from serializers import VacinaSerializer, PessoaSerializer, NotificacaoSerializer
+from .serializers import VacinaSerializer, PessoaSerializer, NotificacaoSerializer
 from rest_framework import viewsets, permissions
-from models import Vacina, Pessoa, Notificacao
+from .models import Vacina, Pessoa, Notificacao
 
 
 def index(request):

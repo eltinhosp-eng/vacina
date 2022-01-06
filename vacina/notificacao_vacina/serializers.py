@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from models import Vacina, Pessoa, Notificacao
+from .models import Vacina, Pessoa, Notificacao
 
 
 class VacinaSerializer(serializers.ModelSerializer):
