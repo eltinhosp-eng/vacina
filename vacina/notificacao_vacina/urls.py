@@ -1,7 +1,11 @@
-from django.urls import path
+from rest_framework.routers import DefaultRouter
+from .views import VacinaViewSet, PessoaViewSet, NotificacaoViewSet
 
-from . import views
+app_name = 'api'
 
-urlpatterns = [
-    path('', views.index, name='index'),
-]
+router = DefaultRouter(trailing_slash=False)
+router.register(r'vacinas', VacinaViewSet)
+router.register(r'pessoas', PessoaViewSet)
+router.register(r'notificacoes', NotificacaoViewSet)
+
+urlpatterns = router.urls
